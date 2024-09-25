@@ -1,23 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Question 4 - JavaScript</title>
-
 </head>
-
 <body>
     <h1>HTML DOM Events</h1>
-    <p>Trigger a function on hover that will output "Hello World":</p>
+    <p>Trigger a function on click that will output "Hello World":</p>
 
-    <button onmouseover="myFunction()">Action!</button>
+    <!-- Button with only click event -->
+    <button onclick="clickFunction()">Action!</button>
+    
     <p id="demo"></p>
-</body>
-<script>
-    function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
-    }
-</script>
 
+    <script>
+        // Function to change the text when button is clicked
+        function clickFunction() {
+            document.getElementById("demo").innerHTML = "Hello World!";
+        }
+    </script>
+
+</body>
 </html>
